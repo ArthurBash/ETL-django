@@ -1,0 +1,13 @@
+# General
+# ------------------------------------------------------------------------------
+USE_DOCKER=yes
+IPYTHONDIR=/app/.ipython
+DJANGO_SETTINGS_MODULE=config.settings.local
+DJANGO_SECRET_KEY=asdfsadf3q145234sdfas
+DB_HOST=postgresdb
+
+# DATABASE_URL=mysql://user:password@mysql:3306/hash
+DATABASE_URL=postgres://debug:debug@postgres:5432/apis
+DB_NAME=apis
+DB_USER=debug
+DB_PASS=debug

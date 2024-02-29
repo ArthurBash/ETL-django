@@ -1,0 +1,7 @@
+1 - Crear un dockerfile que integre tanto la documentacion, que instale los requerimientos necesarios, entre ellos swagger
+2 - Crear un docker-compose que contenga un django, y un postgres. 
+3 - Busqueda de algun buen csv.
+3 - Crear modelo del csv, normalizado
+4 - Crear todo el serializer,view y administrador para cargarlo. Con signal.
+5 - Scrip que analice y cargue todo el csv
+

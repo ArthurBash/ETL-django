@@ -1,0 +1,48 @@
+#  Django
+# # ------------------------------------------------------------------------------
+# django==3.1.13  # pyup: < 3.2  # https://www.djangoproject.com/
+# django-environ==0.8.0  # https://github.com/joke2k/django-environ
+# django-model-utils==4.2.0  # https://github.com/jazzband/django-model-utils
+# django-allauth==0.45.0  # https://github.com/pennersr/django-allauth
+# django-crispy-forms==1.13.0  # https://github.com/django-crispy-forms/django-crispy-forms
+# django-compressor==2.4.1  # https://github.com/django-compressor/django-compressor
+# django-redis==5.0.0  # https://github.com/jazzband/django-redis
+
+# # Django REST Framework
+# djangorestframework==3.12.4  # https://github.com/encode/django-rest-framework
+# django-cors-headers==3.10.0 # https://github.com/adamchainz/django-cors-headers
+# django-rest-framework-multi-slug-field
+
+# # Django REST Framework Custum
+# djangorestframework-api-key==2.*  # https://florimondmanca.github.io/djangorestframework-api-key/
+
+# # Custom varios
+# drf-rw-serializers==1.0.4  # https://github.com/vintasoftware/drf-rw-serializers
+# django-simple-history==2.11.0  # https://github.com/jazzband/django-simple-history
+# django-admin-rangefilter==0.6.1  # https://github.com/silentsokolov/django-admin-rangefilter
+# django-tabular-export==1.1.0  # https://github.com/fgmacedo/django-export-action
+# tqdm  # https://github.com/tqdm/tqdm
+# #pandas==1.1.4  # https://github.com/pandas-dev/pandas
+# pandas==1.3.4  # https://github.com/pandas-dev/pandas
+# numpy==1.19.4  # https://github.com/numpy/numpy
+# djangorestframework-simplejwt==4.6.0  # https://github.com/SimpleJWT/django-rest-framework-simplejwt
+# django-admin-autocomplete-filter==0.6.1  # https://github.com/farhan0581/django-admin-autocomplete-filter
+# django-admin-numeric-filter==0.1.6 # https://pypi.org/project/django-admin-numeric-filter/
+# django-admin-multiple-choice-list-filter==0.1.1 #https://github.com/ctxis/django-admin-multiple-choice-list-filter
+# openpyxl==3.0.5  # https://foss.heptapod.net/openpyxl/openpyxl
+# xlrd==2.0.1  # https://github.com/python-excel/xlrd
+# django-filter==2.3.0  # https://django-filter.readthedocs.io/en/master/
+# django-admin-relation-links==0.2.5 # https://github.com/gitaarik/django-admin-relation-links
+# django-extensions==3.1.5   #https://github.com/django-extensions/django-extensions
+
+
+# django-import-export
+
+# # Custom background tasks
+# # Tutorial  https://django-background-tasks.readthedocs.io/en/latest/
+# django-background-tasks==1.2.5  # https://github.com/arteria/django-background-tasks
+# django-mysql>=3.9
+
+
+# drf-spectacular==0.23.1   #https://github.com/tfranzel/drf-spectacular
+# django-jsonfield==1.4.1

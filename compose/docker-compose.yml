@@ -1,0 +1,45 @@
+version: "3"
+
+volumes:
+  local_postgres_data: {}
+  local_panda_media: {}
+
+
+services:
+  django: 
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      postgresdb:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src:rw
+      - local_panda_media:/app/media
+    env_file:
+      - .envs/.django
+      - .envs/.postgres
+    ports:
+      - "8000:8000"
+    command: /start
+
+  postgresdb:
+    image: postgres:13.2
+    ports:
+      - "5432:5432"
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data:Z
+    env_file:
+      - .envs/.postgres
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "debug", "-d", "apis" ]
+      interval: 5s
+      retries: 5
+
+  pgadmin4:
+    image: dpage/pgadmin4
+    ports:
+      - "5050:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=SuperSecret
